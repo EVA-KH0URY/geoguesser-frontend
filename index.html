@@ -52,8 +52,27 @@
 
     <style>
 /*     Just copy everything I have under style here into the new project   */
+      
+      .drawing {
+        transform: translate(-125px, 150px) ;
+        width: 28%;
+        position: absolute;
+        right: 0;
+        opacity: 0.77;
+        pointer-events: none;
+    
+      }
+      
+      .drawing2 {
+        position:absolute;
+        transform: translate(-10px, 100px);
+        right: 0;
+        width: 25%;
+        opacity: 0.77;
+      }
+      
       .shiny-input-text {
-        width: 70%;
+        width: 73%;
       }
       
       .control-label {
@@ -65,13 +84,15 @@
         background-color: #a5c679;
         font-weight: 700;
         width: 30%;
+        filter: drop-shadow(1px 1px 0.12rem forestgreen); 
       }
 
 .mapContainer {
 	width: 100%;
-	height: 80vh;
+	height: 40vh;
 	margin: auto;
 	margin-bottom: 150px;
+  filter: drop-shadow(2px 2px 0.12rem lightgray); 
 }
 
 .mapTitle {
@@ -103,6 +124,7 @@ h1 {
 	display: block;
 	margin-top: 20px;
 	width: 100%;
+  filter: drop-shadow(2px 2px 0.12rem #969696); 
 }
 
 
@@ -119,6 +141,7 @@ body {
 	max-height: 100vh;
 	max-width: 600px;
 	margin: auto;
+  position: relative;
 
 
 
@@ -129,6 +152,16 @@ body {
     </style>
   </head>
   <body>
+    
+<!--   added these two drawings below:   -->
+    <img src="https://file.garden/Zy75IlKnFHAuCMr4/evacartoon.png"
+         class="drawing"
+         />
+    
+    <img src="https://file.garden/Zy75IlKnFHAuCMr4/jaycartoon.png"
+         class="drawing2"
+         />
+    
     <script
       type="text/javascript"
       src="/__static__/components/iframe-resizer/js/iframeResizer.contentWindow.min.js"
